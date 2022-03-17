@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body {
+        background-color: blueviolet;
+    }
+    table {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        max-height: fit-contents;
+    }
+
+    td {
+        font-size: 50px;
+        font-weight: 100;
+        height: 40px;
+        justify-content: center;
+    }
+
+    button {
+        width: 60px;
+        height: 30px;
+        border-radius: 10px;
+        color: black;
+        background-color:white;
+        text-decoration: solid;
+        text-size-adjust: 80px;
+        
+        @media screen {
+            .button {
+                hover
+            }
+        }
+        
+        
+    }
+    button:hover{
+        background-color: green;
+        color: white;
+    }
+    input:hover {
+        background-color: aliceblues;
+    }
+        h3 {
+        text-align: center;
+        margin-top: 50px;
+        text-decoration: underline;
+        color: yellow;
+    }
+
+</style>
+</head>
+
+<body>
+    <h3>MY CALCULATOR DESIGN</h3>
+
+    <table>
+        <tbody class="calculator_key">
+            <tr>
+                <td colspan="4">
+                    <input type="text" placeholder="calculate">
+                </td>
+            </tr>
+            <tr>
+                <td><button id="btn">7</button></td>
+                <td><button id="btn">8</button></td>
+                <td><button id="btn">9</button></td>
+                <td><button id="btn" class="key operator" data-action="multiply">x</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn">4</button></td>
+                <td><button id="btn">5</button></td>
+                <td><button id="btn">6</button></td>
+                <td><button id="btn" class="key operator" data-action="divide">/</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn">1</button></td>
+                <td><button id="btn">2</button></td>
+                <td><button id="btn">3</button></td>
+                <td><button id="btn" class="key operator" data-action="subtract">-</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn" data-action="decimal">.</button></td>
+                <td><button id="btn">0</button></td>
+                <td><button id="btn" class="key--equal" data-action="calculate">=</button></td>
+                <td><button id="btn" class="key operator" data-action="add">+</button></td>
+            </tr>
+            <tr>
+                <td><button id="btn" data-action="delete">DEL</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+       function test(e){
+            console.log(e.innerHTML);
+            console.log(e.innerHtml);
+        }
+
+        let  = document.getElementById("btn-7")
+
+        btn.addEventListener("click", function(e){
+                
+                console.log(e.innerHTML);
+                console.log(e.innerHtml);
+                })
+    
+    </script>
+</body>
+</html>
